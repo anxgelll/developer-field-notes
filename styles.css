@@ -96,6 +96,7 @@ footer {
 
 /* Responsive: stack table padding tighter on small screens */
 @media (max-width: 600px) {
+  table { display: block; overflow-x: auto; }
   header { padding-top: 1.5rem; }
   h1 { font-size: 1.9rem; }
   section { padding: 1rem; }
