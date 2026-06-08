@@ -1,0 +1,103 @@
+/* Developer Field Notes — styles */
+:root {
+  --bg: #0f1117;
+  --card: #171a23;
+  --text: #e6e8ee;
+  --muted: #9aa3b2;
+  --accent: #6ea8fe;
+  --code-bg: #0b0d12;
+  --border: #262b38;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+header, main, footer {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+header {
+  text-align: center;
+  padding-top: 3rem;
+}
+
+h1 {
+  font-size: 2.4rem;
+  margin: 0;
+}
+
+.tagline {
+  color: var(--muted);
+  margin-top: 0.5rem;
+}
+
+section {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  margin-top: 0;
+  color: var(--accent);
+  font-size: 1.3rem;
+}
+
+code {
+  background: var(--code-bg);
+  padding: 0.15rem 0.4rem;
+  border-radius: 5px;
+  font-family: "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.9em;
+  color: #d6deeb;
+}
+
+.note {
+  color: var(--muted);
+  font-style: italic;
+}
+
+ol.loop li, ul li { margin-bottom: 0.4rem; }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 0.5rem;
+}
+
+th, td {
+  text-align: left;
+  padding: 0.5rem 0.6rem;
+  border-bottom: 1px solid var(--border);
+  vertical-align: top;
+}
+
+th { color: var(--muted); font-weight: 600; }
+
+a { color: var(--accent); }
+
+footer {
+  text-align: center;
+  color: var(--muted);
+  border-top: 1px solid var(--border);
+  margin-top: 2rem;
+}
+
+/* Responsive: stack table padding tighter on small screens */
+@media (max-width: 600px) {
+  header { padding-top: 1.5rem; }
+  h1 { font-size: 1.9rem; }
+  section { padding: 1rem; }
+  th, td { padding: 0.4rem; font-size: 0.95rem; }
+}
