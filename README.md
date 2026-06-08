@@ -15,7 +15,7 @@ https://anxgelll.github.io/developer-field-notes
 
 ## One Thing I Learned About Git
 <!-- TODO: replace with something real in your own words -->
-A file existing in my editor does not mean it's saved in Git — it has to be **staged** (`git add`) and then **committed** before it's part of the history.
+Git can sometimes be very tedious when it comes to the debugging part, not like debugging code for C++ or something like that, just cleaning up previous mistakes from the previous commands made. For example I was not doing checkout in the proper branch and it caused me a bunch of errors, so I make sure I checkout on main or whichever branch I need to now.
 
 ## Git Practice Evidence
 commit ec8860dd05d32ef154b1fb732a77030810dc40c3 (HEAD -> main, origin/main, origin/HEAD)
