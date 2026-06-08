@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Developer Field Notes</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Developer Field Notes</h1>
+    <p class="tagline">My personal Git &amp; bootcamp reference — commands, habits, and reminders.</p>
+  </header>
+
+  <main>
+    <!-- Required: Git vs GitHub -->
+    <section id="git-vs-github">
+      <h2>Git vs. GitHub</h2>
+      <p>
+        <strong>Git</strong> is a version-control tool that runs <em>locally</em> on my computer.
+        It tracks changes to my files and lets me save snapshots (commits) of my work.
+      </p>
+      <p>
+        <strong>GitHub</strong> is a <em>remote</em> website that hosts Git repositories in the cloud.
+        It's where I back up my code, collaborate, open issues, and review pull requests.
+      </p>
+      <p class="note">In short: Git is the tool, GitHub is the place I send my Git history to.</p>
+    </section>
+
+    <!-- Required: the daily loop -->
+    <section id="daily-loop">
+      <h2>The Daily Loop</h2>
+      <ol class="loop">
+        <li><strong>Edit</strong> — change files in my editor.</li>
+        <li><strong>Stage</strong> — <code>git add &lt;file&gt;</code> to mark what goes in the next snapshot.</li>
+        <li><strong>Commit</strong> — <code>git commit -m "message"</code> to save the snapshot locally.</li>
+        <li><strong>Push</strong> — <code>git push</code> to send commits to GitHub.</li>
+      </ol>
+    </section>
+
+    <!-- Required: at least 8 commands -->
+    <section id="commands">
+      <h2>Command Reference</h2>
+      <table>
+        <thead>
+          <tr><th>Command</th><th>What it does</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><code>git init</code></td><td>Start tracking the current folder with Git.</td></tr>
+          <tr><td><code>git status</code></td><td>Show what's changed, staged, or untracked.</td></tr>
+          <tr><td><code>git add &lt;file&gt;</code></td><td>Stage a file for the next commit.</td></tr>
+          <tr><td><code>git commit -m "msg"</code></td><td>Save a snapshot of the staged changes.</td></tr>
+          <tr><td><code>git diff</code></td><td>Show the exact line changes before staging.</td></tr>
+          <tr><td><code>git push</code></td><td>Send local commits to the remote (GitHub).</td></tr>
+          <tr><td><code>git pull</code></td><td>Fetch and merge the latest from the remote.</td></tr>
+          <tr><td><code>git branch</code></td><td>List branches (or create one).</td></tr>
+          <tr><td><code>git checkout -b &lt;name&gt;</code></td><td>Create and switch to a new branch.</td></tr>
+          <tr><td><code>git log --oneline</code></td><td>Show a compact history of commits.</td></tr>
+          <tr><td><code>git remote -v</code></td><td>Show the remote repositories I'm connected to.</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Required: things I should not commit -->
+    <section id="do-not-commit">
+      <h2>Things I Should Not Commit</h2>
+      <ul>
+        <li><code>.env</code> and <code>.env.local</code> — environment files with secrets.</li>
+        <li>API keys, passwords, tokens — any <strong>secret</strong>. If pushed, treat it as leaked and rotate it.</li>
+        <li><code>node_modules/</code> — huge, reinstallable dependency folder.</li>
+        <li><code>.DS_Store</code> — macOS junk file.</li>
+      </ul>
+      <p class="note">I keep these out using a <code>.gitignore</code> file from the start.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Built by <strong>Angel MacNeo</strong> · <a href="https://github.com/anxgelll">@anxgelll</a></p>
+  </footer>
+</body>
+</html>
