@@ -64,3 +64,40 @@ commit f212e14c94c3e61a73bdbed3af6cf83448d04d10
 Author: anxgelll <angel.ventura6251@gmail.com>
 Date:   Mon Jun 8 13:29:35 2026 -0400
 :
+5669e77 (HEAD -> main, origin/main, origin/HEAD) Merge pull request #6 from anxgelll/feature/git-habits
+aa4a828 (origin/feature/git-habits, feature/git-habits) Add a good habits section
+ac93330 Add Git practice evidence to README
+ec8860d Merge pull request #4 from anxgelll/feature/responsive-styling
+b0e1220 (origin/feature/responsive-styling) Make command table scroll on small screens
+16a796a Merge pull request #2 from anxgelll/feature/command-reference
+80d8bda (origin/feature/command-reference) Expand command reference table
+be89c30 Add initial styles
+a741e13 Add initial HTML and README
+f212e14 Add .gitignore
+
+*   5669e77 (HEAD -> main, origin/main, origin/HEAD) Merge pull request #6 from anxgelll/feature/git-habits
+|\  
+| * aa4a828 (origin/feature/git-habits, feature/git-habits) Add a good habits section
+|/  
+* ac93330 Add Git practice evidence to README
+*   ec8860d Merge pull request #4 from anxgelll/feature/responsive-styling
+|\  
+| * b0e1220 (origin/feature/responsive-styling) Make command table scroll on small screens
+|/  
+*   16a796a Merge pull request #2 from anxgelll/feature/command-reference
+|\  
+| * 80d8bda (origin/feature/command-reference) Expand command reference table
+|/  
+* be89c30 Add initial styles
+* a741e13 Add initial HTML and README
+* f212e14 Add .gitignore
+
+  feature/git-habits
+* main
+  remotes/origin/HEAD -> origin/main
+  remotes/origin/feature/command-reference
+  remotes/origin/feature/git-habits
+  remotes/origin/feature/responsive-styling
+  remotes/origin/main
+
+  
